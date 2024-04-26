@@ -2,8 +2,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
+.clear {
+  clear: both;
+}
+
+/* header css */
 .header {
   background-color: #f8e1db;
   padding: 15px 40px;
@@ -27,6 +33,199 @@
   text-decoration: none;
 }
 
+/* carousel css  */
+.carousel {
+  background-image: url(../img/BG.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* activities */
+.activities {
+  padding: 80px 0;
+  background-color: #faf4f2;
+  text-align: center;
+}
+
+.activities .acti_title {
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.activities .acti_item {
+  float: left;
+  width: calc(100% / 4);
+  /* background-color: black; */
+  padding: 0 20px;
+}
+
+.activities .acti_item_bg {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  /* position: relative; */
+}
+
+.activities .acti_item_bg .item_img {
+  position: relative;
+}
+
+.activities .acti_item_bg img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.activities .acti_item_bg h3 {
+  margin: 15px 0;
+}
+
+.activities .acti_item_bg p {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.activities .acti_item_bg button {
+  text-transform: capitalize;
+  padding: 10px 40px;
+  /* border-width: 10px;
+  border-style: solid;
+  border-color: red; */
+  /* border: 10px solid red; */
+  border: none;
+  color: gray;
+  border-radius: 20px;
+}
+
+.activities .acti_item_bg i {
+  /* icon thực chất là nội dung */
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* cách 1 */
+  background-color: white;
+  /* padding: 15px; */
+  /* cách 2 */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.activities .acti_view_all button {
+  margin-top: 30px;
+  text-transform: capitalize;
+  padding: 10px 50px;
+  color: 5px red;
+  border: 1px solid red;
+  border-radius: 20px;
+  color: red;
+}
+
+/* contact css  */
+.contact {
+  border-radius: 20px;
+  margin-bottom: 80px;
+  background: #f8e1db;
+}
+.contact__img,
+.contact_content {
+  float: left;
+  width: 50%;
+  padding: 10px 50px;
+}
+
+.contact__img {
+  background-image: url(../img/mask.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact__content {
+  color: brown;
+  padding-top: 65px;
+  float: left;
+}
+
+.contact__content h3 {
+  margin-bottom: 15px;
+}
+
+.contact__content p {
+  margin: 12px 0 30px;
+}
+
+.content__left,
+.content__right {
+  float: left;
+  width: 50%;
+}
+
+.content__right i {
+  font-size: 25px;
+  margin-right: 20px;
+  color: #e76f51;
+}
+
+/* footer  */
+.footer {
+  border-radius: 100px 80px 0 0;
+  text-align: left;
+  background: #f8e1db;
+  color: brown;
+}
+.footer__left {
+  float: left;
+  width: 40%;
+  line-height: 28px;
+  padding: 60px 50px 0px 50px;
+}
+
+.footer__left h3 {
+  margin-bottom: 20px;
+}
+
+.footer__left p {
+  text-align: left;
+}
+
+.footer__right {
+  width: 60%;
+  float: left;
+  padding-top: 50px;
+}
+
+.right__list {
+  float: left;
+  width: 33.33%;
+  text-align: left;
+}
+
+.right__list h3 {
+  margin-bottom: 30px;
+}
+.right__list li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.right__list a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer__copyrights {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* ---------------------- */
+
 .demo {
   background-color: black;
 }
@@ -43,4 +242,11 @@
   width: 200px;
   height: 200px;
   background-color: blue;
+}
+
+.demo3 {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  border-radius: 50%;
 }
